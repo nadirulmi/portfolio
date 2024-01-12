@@ -1,0 +1,35 @@
+{
+    "header":{
+        "hello": "Hola 🖐🏻! Mi nombre es Nadir, y soy",
+        "cv": "Descargar cv",
+        "me": "Sobre mi",
+        "about": "Soy",
+        "description": ", una Full Stack developer de 24 años que vive en Córdoba, Argentina. Mi principal foco y verdadera pasión se encuentra en el mundo del desarrollo Front End. La posibilidad de darle vida a un sitio web, fusionando diseño con funcionalidad, es lo que más me apasiona de este campo. Mi interés por el Front End se nutre de la fascinación por crear experiencias visuales atractivas y dinámicas para los usuarios.",
+        "skills": "Habilidades()",
+        "navbar": {
+            "home": "Inicio",
+            "aboutme": "Sobre mí",
+            "project": "Projectos",
+            "contact": "Contacto"
+        },
+        "projects": {
+            "title": "Proyectos",
+            "button": "Ver mas"
+        },
+        "contact":{
+            "title": "Contactame",
+            "name": "Nombre",
+            "mess": "Mensaje",
+            "send": "Enviar"
+        },
+        "form":{
+            "name":{
+                "user_name": "Por favor ingrese su nombre",
+                "name_user": "Su nombre solo puede contener de 3 a 12 letras"
+            },
+            "email": "Por favor ingrese su email",
+            "message": "Por favor deje su mensaje"
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "projects": [
+      {
+        "name": "Green wave",
+        "description": "",
+        "image": "../public/images/greenwave.png",
+        "link": "https://greenwave-henry.vercel.app/",
+        "tec": [
+            "Next.Js", "CSS", "Tailwind", "Javascript", "Node.Js", "Express", "PostgreSQL"
+        ]
+      },
+      {
+        "name": "Wiki dog",
+        "description": "",
+        "image": "../public/images/wikidogs.png",
+        "link": "https://wikidog-ulminadir.vercel.app/",
+        "tec": [
+            "React", "Redux", "CSS", "Node.Js", "Javascript", "Express", "PostgreSQL"
+        ]
+      },
+      {
+        "name": "Conferencia Bs As",
+        "description": "",
+        "image": "../public/images/codoacodo.png",
+        "link": "https://confbuenosaires.netlify.app/",
+        "tec": [
+            "Html", "CSS", "Javascript", "Bootstrap"
+        ]
+      },
+      {
+        "name": "Alma Kira",
+        "description": "",
+        "image": "../public/images/almakira.png",
+        "link": "https://almakira.netlify.app/",
+        "tec": [
+            "Html", "CSS"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,98 @@
+.navContainer {
+  position: sticky;
+  background-color: #350824;
+  top: 0;
+  padding: 10px;
+  z-index: 100; 
+}
+
+nav {
+  flex-wrap: wrap;
+  
+}
+
+nav Button {
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav Button:hover {
+  color: white; 
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav .menu{
+  display: none;
+  top:0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  transition: height 0.3s ease; /* Transición suave de 0.3 segundos */
+  overflow: hidden;
+}
+
+nav .menu span{
+  height: 0.4rem;
+  width: 100%;
+  background-color: #ffff;
+  border: 0.2rem;
+}
+
+@media (min-width:770px){
+  nav ul li {
+    padding: 0.7rem;
+    margin: 0 0.5rem;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .nav {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+    }
+
+  nav .menu {
+    display: flex;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .navContainer{
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+    margin: auto;
+    padding: 0;
+  }
+
+  .open {
+    display: flex;
+  }
+
+ 
+
+  nav Button:hover {
+    color: white;
+  }
+}
+
+
