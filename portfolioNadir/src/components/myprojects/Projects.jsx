@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next";
-import almakira from "/public/images/almakira.png";
-import codoacodo from "/public/images/codoacodo.png"
 import projectsData from "./../../projects.json"
 import "./projects.css"
 import Slider from "react-slick";

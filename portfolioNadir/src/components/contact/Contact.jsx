@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../about/about.css";
-import picture from "/public/images/contact.jpg";
+import picture from "../images/contact.jpg";
 import { useTranslation } from "react-i18next";
 import { Formik } from "formik";
 

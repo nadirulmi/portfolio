@@ -3,7 +3,7 @@
       {
         "name": "Green wave",
         "description": "",
-        "image": "../public/images/greenwave.png",
+        "image": "../images/greenwave.png",
         "link": "https://greenwave-henry.vercel.app/",
         "tec": [
             "Next.Js", "CSS", "Tailwind", "Javascript", "Node.Js", "Express", "PostgreSQL"

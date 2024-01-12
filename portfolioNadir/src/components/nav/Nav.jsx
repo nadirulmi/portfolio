@@ -2,8 +2,8 @@ import style from "./Nav.module.css";
 import { useState } from "react";
 import { Link } from "react-scroll";
 import {useTranslation} from "react-i18next"
-import en from "/public/images/reino-unido.png"
-import es from "/public/images/espana.png"
+import en from "../images/reino-unido.png"
+import es from "../images/espana.png"
 
 export const Nav = () => {
   const [t, i18n] = useTranslation("global")

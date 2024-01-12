@@ -3,67 +3,67 @@
     "images": [
       {
         "name": "html",
-        "path": "../public/images/html-5.png",
+        "path": "../images/html-5.png",
         "alt": "HTML Logo"
       },
       {
         "name": "css",
-        "path": "../public/images/css-3.png",
+        "path": "../images/css-3.png",
         "alt": "CSS Logo"
       },
       {
         "name": "react",
-        "path": "../public/images/react.png",
+        "path": "../images/react.png",
         "alt": "React Logo"
       },
       {
         "name": "redux",
-        "path": "../public/images/redux.png",
+        "path": "../images/redux.png",
         "alt": "Redux Logo"
       },
       {
         "name": "next",
-        "path": "../public/images/nextjs.png",
+        "path": "../images/nextjs.png",
         "alt": "Next Logo"
       },
       {
         "name": "Bootstrap",
-        "path": "../public/images/boostrap.png",
+        "path": "../images/boostrap.png",
         "alt": "Bootstrap Logo"
       },
       {
         "name": "Tailwind",
-        "path": "../public/images/tailwind.webp",
+        "path": "../images/tailwind.webp",
         "alt": "Tailwind Logo"
       },
       {
         "name": "Javascript",
-        "path": "../public/images/js.png",
+        "path": "../images/js.png",
         "alt": "Javascript Logo"
       },
       {
         "name": "NodeJs",
-        "path": "../public/images/node.png",
+        "path": "../images/node.png",
         "alt": "NodeJs Logo"
       },
       {
         "name": "Postgresql",
-        "path": "../public/images/Postgresql.png",
+        "path": "../images/Postgresql.png",
         "alt": "Postgresql Logo"
       },
       {
         "name": "Sass",
-        "path": "../public/images/sass.png",
+        "path": "../images/sass.png",
         "alt": "Sass Logo"
       },
       {
         "name": "Github",
-        "path": "../public/images/github.webp",
+        "path": "../images/github.webp",
         "alt": "Github Logo"
       },
       {
         "name": "Git",
-        "path": "../public/images/Git.png",
+        "path": "../images/Git.png",
         "alt": "Git Logo"
       }
 
