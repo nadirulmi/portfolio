@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import projectsData from "./../../projects.json"
+import projectsData from "../../projects.json"
 import "./projects.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
