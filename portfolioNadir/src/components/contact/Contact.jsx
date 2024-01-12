@@ -51,13 +51,13 @@ export const Contact = () => {
     <div id="contact">
       <div className=" flex justify-center items-center ">
         <div
-          className={`w-full lg:w-2/4 h-screen bg flex flex-col justify-center`}
+          className={`w-full lg:w-2/4 lg:h-screen bg flex flex-col justify-center`}
         >
           <h1 className="text-pink-500 text-4xl lg:text-5xl mb-6 font-bold m-10">
             // {t("header.contact.title")} //
           </h1>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mb-20">
             <Formik
               initialValues={{
                 user_name: "",
