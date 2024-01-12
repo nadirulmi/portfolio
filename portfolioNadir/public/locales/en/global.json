@@ -28,7 +28,8 @@
                 "name_user": "Can only contain from 3 to 12 letters"
             },
             "email": "Please enter your email",
-            "message": "Please leave a message"
+            "message": "Please leave a message",
+            "button": "Form sent, thanks for contacting me!"
         }
         
     }

@@ -4,14 +4,29 @@ import "../about/about.css";
 import picture from "/public/images/contact.jpg";
 import { useTranslation } from "react-i18next";
 import { Formik } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Contact = () => {
+  const mensaje = () => {
+    toast.success(t("header.form.button"), {
+      position: "top-right",
+      autoClose: 4000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: false,
+      theme: "light",
+      style: {
+        boxShadow: "0 4px 8px rgba(255, 0, 127, 0.5)", 
+      },
+    });
+  };
   const [t, i18n] = useTranslation("global");
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
+  const sendEmail = (setSubmitting) => {
     emailjs
       .sendForm(
         "service_wsrxsgi",
@@ -21,12 +36,15 @@ export const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result) mensaje();
         },
         (error) => {
           console.log(error.text);
         }
-      );
+      )
+      .finally(() => {
+        setSubmitting(false);
+      });
   };
 
   return (
@@ -41,37 +59,48 @@ export const Contact = () => {
 
           <div className="flex justify-center items-center">
             <Formik
-            initialValues={{
-              user_name: "",
-              user_email: "",
-              message: ""
-            }}
-            validate={(values) =>{
-              const errors = {};
+              initialValues={{
+                user_name: "",
+                user_email: "",
+                message: "",
+              }}
+              validate={(values) => {
+                const errors = {};
 
-              if (!values.user_name) {
-                errors.user_name = t("header.form.name.user_name");
-              } else if (!/^[a-zA-ZñÑ\sáéíóúÁÉÍÓÚ]{3,30}$/.test(values.user_name)) {
-                errors.user_name = t("header.form.name.name_user");
-              }
+                if (!values.user_name) {
+                  errors.user_name = t("header.form.name.user_name");
+                } else if (
+                  !/^[a-zA-ZñÑ\sáéíóúÁÉÍÓÚ]{3,30}$/.test(values.user_name)
+                ) {
+                  errors.user_name = t("header.form.name.name_user");
+                }
 
-              if (!values.user_email) {
-                errors.user_email = t("header.form.email");
-              } 
+                if (!values.user_email) {
+                  errors.user_email = t("header.form.email");
+                }
 
-              if (!values.message) {
-                errors.message = t("header.form.message");
-              } 
+                if (!values.message) {
+                  errors.message = t("header.form.message");
+                }
 
-              return errors;
-            }}
-            
-            
+                return errors;
+              }}
+              onSubmit={(values, { setSubmitting }) => {
+                sendEmail(values, setSubmitting);
+              }}
             >
-              {({values, handleChange, errors, touched, handleBlur}) => (
+              {({
+                values,
+                handleChange,
+                errors,
+                touched,
+                handleBlur,
+                isSubmitting,
+                handleSubmit,
+              }) => (
                 <form
                   ref={form}
-                  onSubmit={sendEmail}
+                  onSubmit={handleSubmit}
                   className="flex flex-col bg-white w-9/12 p-8 mt-16 rounded-lg shadow-2xl shadow-pink-900/50"
                 >
                   <label className="font-semibold m-2 text-start">
@@ -86,10 +115,10 @@ export const Contact = () => {
                     onBlur={handleBlur}
                   />
                   {touched.user_name && errors.user_name && (
-                  <div className="font-bold text-xs text-start m-1 text-orange-700">
-                    {errors.user_name}
-                  </div>
-                )}
+                    <div className="font-bold text-xs text-start m-1 text-orange-700">
+                      {errors.user_name}
+                    </div>
+                  )}
                   <label className="m-2 font-semibold text-start">Email</label>
                   <input
                     className="w-full px-3 py-2 border border-gray-300 rounded"
@@ -100,10 +129,10 @@ export const Contact = () => {
                     onBlur={handleBlur}
                   />
                   {touched.user_email && errors.user_email && (
-                  <div className="font-bold text-xs text-start m-1 text-orange-700">
-                    {errors.user_email}
-                  </div>
-                )}
+                    <div className="font-bold text-xs text-start m-1 text-orange-700">
+                      {errors.user_email}
+                    </div>
+                  )}
                   <label className="m-2 font-semibold text-start">
                     {t("header.contact.mess")}
                   </label>
@@ -114,20 +143,22 @@ export const Contact = () => {
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                  {touched.message && errors.message&& (
-                  <div className="font-bold text-xs text-start m-1 text-orange-700">
-                    {errors.message}
-                  </div>
-                )}
+                  {touched.message && errors.message && (
+                    <div className="font-bold text-xs text-start m-1 text-orange-700">
+                      {errors.message}
+                    </div>
+                  )}
                   <input
                     className="w-full py-2 px-4 rounded mt-6 bg-pink-950 hover:bg-pink-800 text-white cursor-pointer"
                     type="submit"
-                    
-                    disabled={Object.keys(errors).length > 0}
-                    style={{ backgroundColor: Object.keys(errors).length > 0 ? 'gray' : '' }}
+                    disabled={isSubmitting}
+                    style={{
+                      backgroundColor:
+                        Object.keys(errors).length > 0 ? "gray" : "",
+                    }}
                     value={t("header.contact.send")}
                   />
-  
+                  <ToastContainer />
                 </form>
               )}
             </Formik>
