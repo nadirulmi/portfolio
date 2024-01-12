@@ -3,62 +3,62 @@
     "images": [
       {
         "name": "html",
-        "path": "../src/images/html-5.png",
+        "path": "src/images/html-5.png",
         "alt": "HTML Logo"
       },
       {
         "name": "css",
-        "path": "../src/images/css-3.png",
+        "path": "src/images/css-3.png",
         "alt": "CSS Logo"
       },
       {
         "name": "react",
-        "path": "../src/images/react.png",
+        "path": "src/images/react.png",
         "alt": "React Logo"
       },
       {
         "name": "redux",
-        "path": "../src/images/redux.png",
+        "path": "src/images/redux.png",
         "alt": "Redux Logo"
       },
       {
         "name": "next",
-        "path": "../src/images/nextjs.png",
+        "path": "src/images/nextjs.png",
         "alt": "Next Logo"
       },
       {
         "name": "Bootstrap",
-        "path": "../src/images/boostrap.png",
+        "path": "src/images/boostrap.png",
         "alt": "Bootstrap Logo"
       },
       {
         "name": "Tailwind",
-        "path": "../src/images/tailwind.webp",
+        "path": "src/images/tailwind.webp",
         "alt": "Tailwind Logo"
       },
       {
         "name": "Javascript",
-        "path": "../src/images/js.png",
+        "path": "src/images/js.png",
         "alt": "Javascript Logo"
       },
       {
         "name": "NodeJs",
-        "path": "../src/images/node.png",
+        "path": "src/images/node.png",
         "alt": "NodeJs Logo"
       },
       {
         "name": "Postgresql",
-        "path": "../src/images/Postgresql.png",
+        "path": "src/images/Postgresql.png",
         "alt": "Postgresql Logo"
       },
       {
         "name": "Sass",
-        "path": "../src/images/sass.png",
+        "path": "src/images/sass.png",
         "alt": "Sass Logo"
       },
       {
         "name": "Github",
-        "path": "../src/images/github.webp",
+        "path": "src/images/github.webp",
         "alt": "Github Logo"
       },
       {
