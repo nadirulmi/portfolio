@@ -31,7 +31,8 @@
             "valid_email": "Por favor ingrese un correo valido",
             "message": "Por favor deje su mensaje",
             "button": "Formulario enviado, gracias por contactarme!"
-        }
+        },
+        "footer": "Copyright © Nadir Yamila Ulmi. Todos los derechos reservados."
 
     }
 }
