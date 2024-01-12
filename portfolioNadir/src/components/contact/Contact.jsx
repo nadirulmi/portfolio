@@ -85,8 +85,11 @@ export const Contact = () => {
 
                 return errors;
               }}
-              onSubmit={(values, { setSubmitting }) => {
+              onSubmit={(values, { setSubmitting, resetForm }) => {
                 sendEmail(values, setSubmitting);
+                setTimeout(() => {
+                  resetForm();
+                }, 2000);
               }}
             >
               {({
