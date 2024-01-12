@@ -77,6 +77,9 @@ export const Contact = () => {
 
                 if (!values.user_email) {
                   errors.user_email = t("header.form.email");
+                }else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.user_email)) {
+                  errors.user_email =
+                  t("header.form.valid_email");
                 }
 
                 if (!values.message) {
