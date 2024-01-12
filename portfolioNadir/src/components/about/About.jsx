@@ -1,7 +1,7 @@
 import "./about.css";
 import imagesData from "../../images.json";
 import {useTranslation} from "react-i18next"
-import nadi from "../../images/nadirulmi.png"
+import nadi from "/public/images/nadirulmi.png"
 
 export const About = () => {
   const [t, i18n] = useTranslation("global")
