@@ -63,7 +63,7 @@ export const Projects = () => {
             <p>
               {description}
             </p>
-            <div className="flex flex-wrap justify-center m-4">
+            <div className="flex flex-wrap justify-center lg:m-4">
             {tec?.map((t) =>(
               
               <span className="text-sm italic m-1 lg:m-2 px-2 rounded" style={{backgroundColor: "rgb(149 140 143)"}}>{t}</span>
