@@ -15,7 +15,7 @@ export const Hero = () => {
           <span className="font-bold text-pink-600">fullstack developer</span>.
         </h1>
         <a
-          href="https://drive.google.com/file/d/1M9_cnt61MXu1FgjLPJqakVc9UA1u0wvD/view?usp=sharing"
+          href="https://drive.google.com/file/d/1_vMkV8d88ZsyYrJFg3dM1PG2mjEOpuT8/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block"
